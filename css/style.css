@@ -1,0 +1,71 @@
+/* -------------------
+General Settings 
+---------------------*/
+:root{
+    --btn-clr: #E02C6D;
+    --header-bg: #2D25A0 ;
+}
+body{
+    background-color: #000000;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+}
+/* .fullw{
+    max-width: 1440px;
+} */
+
+
+/* -----------------
+End of General Settings 
+------------------------*/
+
+/*  ---------------
+Start Header Section
+-------------------*/
+header{
+    background-color: var(--header-bg);
+}
+        /* Start Navbar */
+
+        #login{
+            margin-left: auto;
+            background-color: var(--btn-clr);
+        }
+        /* End of Navbar */
+
+
+        /* Start Banner */
+
+        /* End of Banner */
+/*  ---------------
+End of Header Section
+-------------------*/
+
+
+/*  ---------------
+Start Main Section
+-------------------*/
+
+
+
+/*  ---------------
+End of Main Section
+-------------------*/
+
+
+
+/*  ---------------
+Start Footer Section
+-------------------*/
+
+
+
+/*  ---------------
+End of Footer Section
+-------------------*/
