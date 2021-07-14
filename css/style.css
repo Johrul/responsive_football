@@ -7,9 +7,13 @@ General Settings
     --header-bg: #2D25A0 ;
 
 }
+*{
+    box-sizing: border-box;
+}
 html{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     background-color: #ffffff;
@@ -166,3 +170,35 @@ footer .copy{
 /*  ---------------
 End of Footer Section
 -------------------*/
+
+/* -----------------
+Start Media Query 
+---------------------*/
+
+/* Start Mobile */
+@media only screen and (max-width: 668px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* End Mobile */
+
+/* Start iPAD */
+@media only screen and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* End iPAD */
+
+/* -----------------
+End Media Query 
+---------------------*/
