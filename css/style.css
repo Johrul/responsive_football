@@ -77,7 +77,7 @@ header{
 
         /* Start Banner */
          #banner{
-           padding: 20px; 
+           padding: 20px 20px 50px 20px; 
            display: grid; 
            grid-template-columns: 1fr 1fr;
          }
@@ -109,14 +109,21 @@ Start Main Section
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 20px;
+    gap: 15px;
+    padding: 50px 85px 150px 85px;
 }
 .player{
     max-width: 330px;
+    padding: 15px;
+    box-shadow: 0 0 20px 5px rgba(0,0,0, .1);
+    transition: 0.3s ease-in-out;
+}
+.player:hover{
+    transform: translateY(-10px) scale(1.05);
 }
 .player img{
     max-width: 300px;
+
 }
 
 
