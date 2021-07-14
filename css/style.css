@@ -190,20 +190,24 @@ Start Media Query
     #banner{
         padding: 0; 
         grid-template-columns: 1fr;
+        justify-items: center;
       }
       #banner h1{
         color: #fff;
         font-size: 24px;
         font-weight: 600;
+        padding-bottom: 20px;
     }
       #banner img{
         max-width: 200px;
+        padding-top: 20px;
     }
 
     .players{
-        display: block;
-        padding:20px 0;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center
     }
     footer img{
         max-width: 260px;
