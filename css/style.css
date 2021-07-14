@@ -6,13 +6,19 @@ General Settings
     --header-bg: #2D25A0 ;
 }
 body{
-    background-color: #000000;
+    background-color: #ffffff;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 .container{
     max-width: 1440px;
+}
+a{
+    text-decoration: none;
+}
+.flexcenter{
     display: flex;
     justify-content: center;
 }
@@ -30,6 +36,7 @@ Start Header Section
 -------------------*/
 header{
     background-color: var(--header-bg);
+    
 }
         /* Start Navbar */
 
@@ -63,9 +70,31 @@ End of Main Section
 /*  ---------------
 Start Footer Section
 -------------------*/
+footer{
+    /* display: flex;
+    justify-content: center; */
+}
+footer img{
+    max-width: 483.87px;
+}
+footer .social{
+    text-align: center;
+    padding-bottom: 16px;
+}
+footer .social i{
+    color: #333;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    line-height: 32px;
+    background-color: #969BAB;
+}
+footer .copy{
+    text-align: center;
+    font-size: 18px;
+    color: #000;
 
-
-
+}
 /*  ---------------
 End of Footer Section
 -------------------*/
