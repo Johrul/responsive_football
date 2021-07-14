@@ -98,8 +98,6 @@ header{
          }
          #banner img{
              max-width: 556px;
-             justify-content: end;
-             align-self: flex-end;
              transition: .3s ease-in-out;
          }
          #banner img:hover{
@@ -182,20 +180,35 @@ Start Media Query
 
 /* Start Mobile */
 @media only screen and (max-width: 668px) {
+    nav ul{
+        display: block;
+    }
     .container{
+        /* width: calc(100% -20px); */
         width: 100%;
     }
     #banner{
         padding: 0; 
         grid-template-columns: 1fr;
       }
+      #banner h1{
+        color: #fff;
+        font-size: 24px;
+        font-weight: 600;
+    }
+      #banner img{
+        max-width: 200px;
+    }
 
     .players{
         display: block;
         padding:20px 0;
         justify-content: center;
     }
-    
+    footer img{
+        max-width: 260px;
+        
+    }
 }
 
 /* End Mobile */
@@ -203,7 +216,15 @@ Start Media Query
 /* Start iPAD */
 @media only screen and (max-width: 992px) {
     .container{
-        width: 90vw;
+        width: 100%;
+    }
+    #banner h1{
+        color: #fff;
+        font-size: 34px;
+        font-weight: 600;
+    }
+    #banner img{
+        max-width: 350px;
     }
     .players{
         grid-template-columns: repeat(2, 1fr);
