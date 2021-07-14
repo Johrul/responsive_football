@@ -124,6 +124,7 @@ Start Main Section
     padding: 15px;
     box-shadow: 0 0 20px 5px rgba(0,0,0, .1);
     transition: 0.3s ease-in-out;
+    justify-items: center;
 }
 .player:hover{
     transform: translateY(-10px) scale(1.05);
@@ -232,9 +233,29 @@ Start Media Query
     }
     .players{
         grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .player img{
+        max-width: 300px;
     }
 }
 
+@media only screen and (max-width: 1082px){
+    .players{
+        padding: 50px 0px 150px 0px;
+        justify-items: center;
+    }
+    .player img{
+        max-width: 260px;
+    }
+}
+
+@media only screen and (max-width: 1178px){
+    .players{
+        padding: 50px 20px 150px 20px;
+        justify-items: center;
+    }
+}
 /* End iPAD */
 
 /* -----------------
