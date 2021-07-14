@@ -45,7 +45,7 @@ Start Header Section
 -------------------*/
 header{
     background-color: var(--header-bg);
-
+    margin-bottom: 40px;
 }
         /* Start Navbar */
         nav ul{
@@ -109,10 +109,11 @@ Start Main Section
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
+    gap: 10px;
+    padding: 20px;
 }
 .player{
-    
+    max-width: 330px;
 }
 .player img{
     max-width: 300px;
