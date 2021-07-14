@@ -183,15 +183,19 @@ Start Media Query
 /* Start Mobile */
 @media only screen and (max-width: 668px) {
     .container{
-        width: 90vw;
+        width: 100%;
     }
     #banner{
         padding: 0; 
         grid-template-columns: 1fr;
       }
+
     .players{
-        grid-template-columns: repeat(1, 1fr);
+        display: block;
+        padding:20px 0;
+        justify-content: center;
     }
+    
 }
 
 /* End Mobile */
