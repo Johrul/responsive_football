@@ -5,6 +5,10 @@ General Settings
     --btn-clr: #E02C6D;
     --header-bg: #2D25A0 ;
 }
+html{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: #ffffff;
     box-sizing: border-box;
@@ -13,7 +17,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .container{
-    max-width: 1440px;
+    width: 1160px;
 }
 a{
     text-decoration: none;
@@ -22,11 +26,9 @@ a{
     display: flex;
     justify-content: center;
 }
-/* .fullw{
-    max-width: 1440px;
-} */
-
-
+.btn{
+    background-color: var(--btn-clr);
+}
 /* -----------------
 End of General Settings 
 ------------------------*/
@@ -36,10 +38,23 @@ Start Header Section
 -------------------*/
 header{
     background-color: var(--header-bg);
-    
+
 }
         /* Start Navbar */
-
+        nav ul{
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li:hover a{
+            color: bisque;
+        }
+        nav ul li a{
+            display: block;
+            color: #ffffff;
+            padding: 10px 20px;
+        }
         #login{
             margin-left: auto;
             background-color: var(--btn-clr);
@@ -48,7 +63,26 @@ header{
 
 
         /* Start Banner */
-
+         #banner{
+           padding: 20px; 
+           display: grid; 
+           grid-template-columns: 1fr 1fr;
+         }
+        
+         #banner h1{
+             color: #fff;
+             font-size: 64px;
+             font-weight: 600;
+         }
+         #banner img{
+             max-width: 556px;
+             justify-content: end;
+             align-self: flex-end;
+         }
+         #bannermodel{
+             
+            align-self: flex-end;
+         }
         /* End of Banner */
 /*  ---------------
 End of Header Section
@@ -73,9 +107,11 @@ Start Footer Section
 footer{
     /* display: flex;
     justify-content: center; */
+    text-align: center;
 }
 footer img{
     max-width: 483.87px;
+    
 }
 footer .social{
     text-align: center;
