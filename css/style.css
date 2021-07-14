@@ -3,7 +3,9 @@ General Settings
 ---------------------*/
 :root{
     --btn-clr: #E02C6D;
+    --btn-hover-bg: gold;
     --header-bg: #2D25A0 ;
+
 }
 html{
     margin: 0;
@@ -28,6 +30,11 @@ a{
 }
 .btn{
     background-color: var(--btn-clr);
+    padding: 10px 20px;
+    color: #fff;
+}
+.btn:hover{
+    background-color: var(--btn-hover-bg);
 }
 /* -----------------
 End of General Settings 
@@ -59,6 +66,12 @@ header{
             margin-left: auto;
             background-color: var(--btn-clr);
         }
+        #login a{
+            background-color: var(--btn-clr);
+        }
+        #login:hover a{
+            background-color: var(--btn-hover-bg);
+        }
         /* End of Navbar */
 
 
@@ -78,10 +91,11 @@ header{
              max-width: 556px;
              justify-content: end;
              align-self: flex-end;
+             transition: .3s ease-in-out;
          }
-         #bannermodel{
+         #banner img:hover{
+             transform: rotate(10deg) scale(1.1);
              
-            align-self: flex-end;
          }
         /* End of Banner */
 /*  ---------------
