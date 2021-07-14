@@ -106,7 +106,17 @@ End of Header Section
 /*  ---------------
 Start Main Section
 -------------------*/
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
+}
+.player{
+    
+}
+.player img{
+    max-width: 300px;
+}
 
 
 /*  ---------------
